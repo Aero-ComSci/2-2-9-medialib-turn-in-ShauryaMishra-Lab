@@ -23,9 +23,8 @@ public class Song
   {
     int newRating = rating + r;
     if (newRating >= 0 && newRating <= 10)
-    {
       rating = newRating;
-    }
+
     return rating;
   }
 
@@ -39,9 +38,7 @@ public class Song
     String info = "\"" + title + "\"";
 
     if (rating != 0)
-    {
       info += ", rating is " + rating;
-    }
 
     return info;
   }
